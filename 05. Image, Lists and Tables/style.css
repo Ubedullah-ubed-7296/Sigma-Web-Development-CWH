@@ -1,0 +1,8 @@
+td{
+    border: 2px solid black;
+}
+
+dl, dt, dd{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
