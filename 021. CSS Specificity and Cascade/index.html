@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The specificity of this selector is 1 */
+        h1 {
+            color: aqua;
+        }
+
+        /* The specificity of this selector is 10 */
+        .yellow {
+            /* color: yellow !important; */
+            color: yellow;
+        }
+
+        /* The specificity of this selector is 10 + 1 = 11 */
+        h1.cred {
+            /*so iski priority zada rahti*/
+            color: green;
+        }
+
+        /* The specificity of this selector is 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* The specificity of this selector is 10 */
+        [data-x=a] {
+            /* attribute hai ye */
+            background-color: red;
+        }
+
+
+        /* Quick Quiz */
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41 */
+        a.harryclass.rohan-class[href]:hover{
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- <h1 style="color: blue;" class="yellow cred cpurple">CSS Specificity</h1> -->
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+    <!-- Priority -->
+    <!-- 1.Important (10000)-->
+    <!-- 2. Inline CSS (1000)  -->
+    <!-- 3. ID Selector (100)-->
+    <!-- 4. Class or Attribute Selector (10)-->
+    <!-- 5. Elements Selector (1)-->
+    <!-- 6. Universal Selector (0)-->
+    <!-- mostly used are id and class -->
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            background-color: aqua;
+        }
+
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 200px; /* Not included border and padding, only content height should be 200 + border + padding */
+            box-sizing: border-box;  /* Inlcuded border and padding, means 200 me ich border aur padding include kar do  */
+        }
+
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+            /* donu me margin 25px hai to margin collapse hojata to matlab 25 ich lagta donu ke bich me  */
+            /* aur agar ek ki 25 and 35 hai to highest 35 lagta donu ke bich me */
+            /* isi chiz ko margin collapse boltey */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+</body>
+</html>
