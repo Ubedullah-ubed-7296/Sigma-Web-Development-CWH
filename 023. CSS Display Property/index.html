@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid blue;
+            /* display: inline; */
+            /*ye use kare to uppar se space nahi aati aur isse width bhi nhi badhti*/
+            display: inline-block;
+            /*ye use kare to charo taraf se padding and margin ati aur isse se width bhi badha sakte*/
+            width: 344px;
+            padding: 45px;
+            margin: 34px;
+        }
+
+        .box1 {
+            /* display: none; */
+            /*isse box bhi gayab hojata aur jo space box lera tha vo bhi gayab hojata*/
+            /* visibility: hidden; */
+            /*isse khali box gayab hojata magar space rahti jaisi ki vaisi*/
+            /* display: flex; */
+            display: inline-flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <div class="box box1">
+        I am a box.
+    </div>
+    <div class="box">also a nice box</div>
+
+    <span>I am a good</span>
+    <span>boy</span>
+</body>
+
+</html>

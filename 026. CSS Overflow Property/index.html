@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box {
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            /*x and y direction mai scroll bar aata*/
+            /* overflow: scroll; */
+             /* zarurat hai to aata nhi to nahi ataa */
+            /* overflow: auto;  */
+            /* overflow: hidden; */
+            /* clip also disables the programmatically srolling */
+            /* overflow: clip; */
+            /* overflow-x: hidden; */
+            /* overflow-y: scroll; */
+            /* x mai hidden aur y mai auto */
+            overflow: hidden auto;
+            /*dusri line me text nhi aana, ek ich line me dikhna pura text*/
+            /* white-space: nowrap;
+            text-overflow: ellipsis; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a good boy and I love to write Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem et
+        ex nam ut? Eius iure ex, inventore nihil hic nemo illum veniam eligendi laudantium. Accusamus nesciunt porro
+        itaque, corrupti sapiente tempora. Accusamus, voluptatum esse adipisci corporis ipsum assumenda debitis qui, eum
+        quo necessitatibus, dolor veritatis.
+    </div>
+</body>
+
+</html>
