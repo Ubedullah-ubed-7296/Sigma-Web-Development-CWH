@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        body {
+            background-color: red;
+        }
+        /* the height is more than width then it is portrait */
+        /* and if width is more than height then it is landscape */
+        /* @media screen and (orientation: portrait) { */
+        @media screen and (orientation: landscape) {
+            body{
+                border:2px solid rgb(0, 255, 0);
+            }
+        }
+
+        /* Types of media query */
+        /* 1. all */
+        /* 2. printer */
+        /* 3. screen */
+        /* 4. speech */
+
+        /* max-width raha to 0px to 445px ye media query implement hota */
+        /* min-width raha to 0px to 445px ye media query implement nhi hota, 445px se badh ke raha to implement hota*/
+        /* @media only screen and (min-width: 455px) { */
+        @media only screen and (max-width: 455px) {
+            body{
+                background-color: blue;
+            }
+
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+        /* @media not|only mediatype and (expressions){
+            CSS-Code;
+        } */
+
+        .boxes{
+            display: flex;
+        }
+
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+        }
+
+        /* 1. phones devices is should below 455px*/
+        /* 2. from 455px to 750px we consider them as tablets */
+        /* 3. 750px above laptop and monitors*/
+    </style>
+</head>
+
+<body>
+    <div>
+        Hey I am a red body guy!
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
