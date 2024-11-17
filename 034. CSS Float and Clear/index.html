@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        img{
+            float: left;
+            /* float: right; */
+        }
+
+        .card{
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3){
+            background-color: aqua;
+            /* clear: right; */
+            clear: both;
+        }
+
+        /* ab use nakko karo float and clear, ye purana style hai, ab flex-box use hora */
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9OKXnGALLQRstsiCfQrT6wTh1-ZNAT7nztQ&s" alt="" width="230">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fugit ad porro aliquid, odio pariatur nulla esse corporis explicabo unde? Quis eveniet accusamus nisi enim quam dicta! Sed maxime doloribus mollitia, nesciunt cum molestias.</p>
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ipsam vel expedita impedit eos. Reiciendis ducimus quas vitae dolorem dignissimos quod voluptatibus nostrum, illo explicabo dolore. Aut dolores nisi odio, facere obcaecati natus, illo eligendi consequuntur accusantium quaerat, officiis delectus necessitatibus porro quia nostrum magnam voluptatem cumque repellat unde qui quae libero molestias! Eos praesentium quos repudiandae, illo voluptates dolores aspernatur quae necessitatibus laudantium, qui incidunt voluptatum eius provident! Ea architecto quas minima porro, itaque alias exercitationem corporis, optio repudiandae ad earum non maxime ratione eligendi ex, accusantium facilis fugit veritatis iste sunt. Enim repudiandae ipsam sequi suscipit officiis nihil laudantium, perferendis minima ullam? Possimus quibusdam vero eligendi illo tempore perspiciatis impedit inventore velit, aspernatur a, illum nostrum voluptate rem voluptatibus animi in asperiores consequatur et rerum eius obcaecati nulla dolores itaque cupiditate? Quo, et vel optio ratione distinctio repellendus beatae consectetur assumenda perferendis dolore impedit maiores sequi cumque numquam consequuntur? Est deleniti non a iusto et vel sit rerum eos voluptatibus nobis hic facilis beatae totam dicta, accusantium ipsum architecto. Quibusdam et quod necessitatibus ipsum dolore minima saepe voluptas, eveniet rerum. Omnis voluptatibus libero esse, nostrum voluptates recusandae amet impedit magni veniam quos soluta velit voluptate earum id dicta voluptatem fugiat. Quo asperiores vel itaque? Id molestiae nihil iste maiores quaerat optio, facere dolores iure esse praesentium amet commodi, ut officia perspiciatis. Illum, saepe nesciunt dignissimos molestiae, recusandae mollitia placeat dolorum magnam officiis quae quo error, at deserunt corporis eligendi sapiente iste. Eius autem, eos dicta, dolorum quam unde harum soluta numquam facere corrupti optio architecto ipsum libero quibusdam adipisci illo necessitatibus veniam quas iure consequuntur minima officiis voluptates pariatur. Consequuntur laboriosam pariatur et eligendi veritatis impedit maiores soluta modi minima culpa inventore dignissimos maxime exercitationem adipisci ab unde eaque, repudiandae consectetur a quisquam tempore corporis cumque! Quod esse aliquid distinctio fugiat laudantium vitae obcaecati dignissimos. Ad corporis dolorem impedit voluptates unde saepe libero voluptatum quam quidem fuga quia dolorum quis et, eius voluptatem. Laborum excepturi soluta ducimus repellat voluptates architecto doloribus optio quas perferendis consequuntur! Quas ad beatae ut ex, aspernatur saepe.
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>
