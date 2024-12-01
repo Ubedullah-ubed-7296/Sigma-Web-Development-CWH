@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            width: 80vw;
+            height: 90vh;
+            border: 2px solid black;
+            display: grid;
+            /* blew line 80vw ko 3 ja divide karti 1fr 1fr 1fr ki vaja se*/
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* ye 4 jagah magar bich vale ku double jagah milti */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* minimum to 100px rahega agar 1fr kuch wajah se nhi raha to */
+            /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+            grid-template-columns: repeat(4,  80px);
+            grid-template-rows: repeat(2,  80px);
+
+            /* ye pura content ko move karne keliye use hota */
+            /* justify-content: center; */
+            /* align-content: center; */
+            /* or  */
+            place-content: center;
+            
+            /* gap: 34px; */
+            row-gap: 10px;
+            column-gap: 44px;
+            /* justify-items and align-items will be used in the cell */
+            justify-items: center;
+            align-items: center;
+        }
+
+        .item{
+            border: 2px solid red;
+            width: 55px;
+            height: 55px;
+        }
+        
+        .item-2{
+            justify-self: flex-end;
+            align-self: flex-start;
+        }
+
+        /* .item-4{
+            grid-row: 1/2;
+            grid-column: pahla/t;
+        } */
+
+        /* .item-1{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        } */
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
